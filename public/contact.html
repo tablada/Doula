@@ -1,0 +1,288 @@
+<!doctype html>
+<html>
+<header>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Beautiful Births</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.1/minty/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="/js/main.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="/styles/style.css" />
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/brands.css" integrity="sha384-rf1bqOAj3+pw6NqYrtaE1/4Se2NBwkIfeYbsFdtiR6TQz0acWiwJbv1IM/Nt/ite"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/fontawesome.css" integrity="sha384-1rquJLNOM3ijoueaaeS5m+McXPJCGdr5HcA03/VHXxcp2kX2sUrQDmFc3jR5i/C7"
+        crossorigin="anonymous">
+
+</header>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="/images/BeautifulBirthsLogo.png" id="navBarLogo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarColor03">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" id="home-link" href="index.html">Home
+                        <!-- <span class="sr-only">(current)</span> -->
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Meet Belle">
+                        <span id="about-me-link">Meet Belle</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="services-link" href="#Offerings">Offerings</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="readings-link" href="readings.html">Readings</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="contact-link" href="contact.html">Let's Connect</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container" id="contactForm-container">
+        <div class="row " id="row-container-top">
+
+
+            <!-- JUMBOTRON FORM  -->
+
+            <div class="jumbotron jumbotron-fluid">
+                <h1 class="display-4">Let's connect!</h1>
+                <p class="lead">Hiring a doula is an important decision and I am sure you have a lot of question and that's
+                    GOOD!.
+                </p>
+                <hr class="my-4">
+                <p>Now is time to provide you with the answers you are looking for and I am here for that. You can call me,
+                    text me or email me.
+                    <br> I also invite you to fill out the contact form. At the end, you would get a chance to schedule our
+                    first meet up.
+                </p>
+                <div class="container" id="jumbotron-contact">
+                    <div class="row">
+                        <div class="col-6 col-md-6">
+                            <div class="form-group">
+                                <label for="firstName">First Name</label>
+                                <input type="text" class="form-control form-control-sm" id="firstName" placeholder="Ex: Jane">
+                            </div>
+                        </div>
+                        <!-- <div class="col-sm-2 col-xs-2">col</div> -->
+                        <div class="col-6 col-md-6">
+                            <div class="form-group">
+                                <label for="lastName">Last Name</label>
+                                <input type="text" class="form-control form-control-sm" id="lastName" placeholder="Ex: Smith">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-6 col-md-6">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Phone number</label>
+                                <input type="tel" class="form-control form-control-sm" id="phoneNumber" placeholder="Ex: 954-123-4567">
+                            </div>
+                        </div>
+                        <!-- <div class="col-sm-2 col-xs-2">col</div> -->
+                        <div class="col-6 col-md-6">
+                            <div class="form-group">Email address</label>
+                                <input type="email" class="form-control form-control-sm" id="email" placeholder="Ex: email@noemail.com.">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 col-md-6">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">How many weeks are you?</label>
+                                <input type="number" class="form-control form-control-sm" id="weeks" placeholder="Ex: 34">
+                            </div>
+                        </div>
+                        <!-- <div class="col-sm-2 col-xs-2">col</div> -->
+                        <div class="col-6 col-md-6">
+                            <div class="form-group">
+                                <label for="dueDate">What is your estimated due date?</label>
+                                <input type="date" class="form-control form-control-sm" id="dueDate" placeholder="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 col-md-6">
+                            <div class="form-group">
+                                <label for="Textarea">Anything you would like to add...</label>
+                                <textarea class="form-control form-control-sm" id="message" rows="3"></textarea>
+                            </div>
+                        </div>
+                        <!-- <div class="col-sm-2 col-xs-2"> col</div> -->
+                        <div class="col-6 col-md-6">
+                            <fieldset class="form-group">
+                                <legend>How would you like to be contacted?</legend>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="radio" class="form-check-input" name="optionsRadios" id="emailContact" value="e-mail" checked="">                                        By
+                                        email.
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="radio" class="form-check-input" name="optionsRadios" id="phoneContact" value="Phone">                                        By
+                                        phone.
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="radio" class="form-check-input" name="optionsRadios" id="textMessContact" value="SMS">                                        By
+                                        text-message.
+                                    </label>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+                    <p class="lead">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#clientTable" id="submitBtn">Submit</button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="clientTable" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="contactModalLabel">Beautiful Births Appointments</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">Would you like to schedule a 1 hour session?</div>
+                                    <div class="modal-footer">
+                                        <a class="btn btn-secondary" href="index.html" data-target="#clientTable" id="noBtn">No</a>
+                                        <a class="btn btn-primary" id="yesBtn">Yes</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+    </div>
+    </div>
+    </div>
+    <!-- THIS IS MY FOOTER-->
+
+    <footer id="main-footer">
+        <div class="container" id="footer-container">
+
+            <!-- Logo row -->
+            <div class="row">
+                <div class="col-lg-12 col-md-12">
+                    <img id="logofooter" src="/images/BeautifulBirthsLogo.png" href="#home" alt="Beautiful Births by Belle">
+                </div>
+            </div>
+
+            <!-- Social Media row -->
+            <div class="row">
+                <div class="col-lg-4 col-md-4"></div>
+                <div class="col-lg-4 col-md-4 text-center" id="socialMedia">
+                    <li class="list-inline-item">
+                        <a class="social-link rounded-circle text-white mr-3" href="https://www.facebook.com/BeautifulBirthsbyBelle/">
+                            <i class="fab fa-facebook-square"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="social-link rounded-circle text-white mr-3" href="https://www.instagram.com/doula_belle/">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="social-link rounded-circle text-white mr-3" href="">
+                            <i class="fab fa-yelp"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="social-link rounded-circle text-white mr-3" href="">
+                            <i class="fab fa-pinterest-square"></i>
+                        </a>
+                    </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4"></div>
+            </div>
+
+            <!-- Footer Menu Row -->
+            <div class="row">
+                <div class="col-lg-4 col-md-4"></div>
+                <div class="col-lg-4 col-md-4 text-center" id="footerMenu">
+                    <li class="list-inline-item">
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="social-link rounded-circle text-white mr-3" href="">
+                            Home
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="social-link rounded-circle text-white mr-3" href="">
+                            Meet Belle
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="social-link rounded-circle text-white mr-3" href="">
+                            Offerings
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="social-link rounded-circle text-white mr-3" href="">
+                            Readings
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="social-link rounded-circle text-white mr-3" href="">
+                            Let's Connect
+                        </a>
+                    </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4"></div>
+            </div>
+            <hr>
+
+            <!-- Contact Info Row -->
+            <div class="row">
+                <div class="col-lg-12 col-md-12" class="myInfo" id="footerContactInfo">
+                    <h2>Beautiful Births Doula Services</h2>
+                    <p class="myInfo">hello@beautifulbirthsbybelle ~ Business: 954-866-3668 || Cell: 863-991-0961</p>
+                    <p class="myInfo">4026 Inverrary Boulevard, Lauderhill, FL 33319</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-md-12 text-center">
+                    <button type="button" class="btn btn-sm" id="AdminBtn">Access Admin</button>
+                </div>
+            </div>
+
+            <!-- Copyright Row -->
+            <div class="row">
+                <div class="col-lg-12 col-md-12">
+                    <p id="copyright"> Copyright © 2018 beautifulbirthsbybelle | All rights reserved.</p>
+                </div>
+            </div>
+    </footer>
+
+    <script src="./js/contact.js"> </script>
+</body>
+
+</html>
